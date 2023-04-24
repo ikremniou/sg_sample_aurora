@@ -57,6 +57,6 @@ init python in sg_aurora:
         character = characters[character_id]
         new_post = AuroraPost(character, text, picture, likes, likes_with, is_bookmarked);
 
-        recent_posts.append(new_post)
+        recent_posts.insert(0, new_post)
         pass
 
